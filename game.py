@@ -1,8 +1,8 @@
-import random
+import secrets
 
 index = {"Rock": 0,"Paper": 1, "Scissors": 2}
 inverse_index = {0: "Rock", 1: "Paper", 2: "Scissors"}
-computer = random.randint(0,2)
+computer = secrets.SystemRandom().randint(0,2)
 player = input("Enter one of Rock, Paper, or Scissors: ")
 player = index[player]
 if player == computer:
